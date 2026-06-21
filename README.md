@@ -1,6 +1,6 @@
 # Sengoku Codex
 
-日本现代行政区划与战国时代旧地名对照地图。
+An interactive map that connects modern Japanese prefectures with Sengoku-period place names.
 
 [Live Demo](https://sakagami-yoshitoshi.github.io/sengoku-codex/) · [Release v0.1.0](https://github.com/sakagami-yoshitoshi/sengoku-codex/releases/tag/v0.1.0) · [Source Code](./src/)
 
@@ -8,60 +8,65 @@
 
 ## What It Is
 
-Sengoku Codex 是一个面向桌面端浏览的静态网页地图项目，用来把现代日本都道府县、战国时代旧国名、代表性守护 / 大名、代表武将，放在同一张交互地图中学习。
+Sengoku Codex is a desktop-first static web map for learning how present-day Japanese prefectures relate to Sengoku-era provinces, regional powers, and notable historical figures.
 
-这个项目特别适合旅行前做路线预习，或者在日本各地移动时快速对照“我现在所在的现代行政区”和“这里在战国史里到底属于哪里”。
+It is designed for history-oriented travel planning and on-the-go reference, so you can quickly answer questions like: "Which modern prefecture am I in?" and "What was this area called during the Sengoku period?"
 
 ## Highlights
 
-- 覆盖日本 47 个都道府县
-- 现代地名与战国旧国名采用日文 / 英文双语显示
-- 默认全域视图以现代日本八大区域配色显示
-- 点击都道府县后自动切换到局部放大视图
-- 局部视图显示主要城市位置
-- 右侧信息面板显示旧国名、区域、代表大名、代表武将与战国概要
-- 前端已拆分为 `HTML + CSS + JavaScript` 多文件结构，便于后续维护
+- Covers all 47 Japanese prefectures
+- Displays modern names and Sengoku-era place names in Japanese and English
+- Uses the modern eight-region color grouping in the default full-map view
+- Switches to a zoomed local view when a prefecture is selected
+- Shows major city labels inside the zoomed prefecture view
+- Includes an information panel with provinces, regional grouping, daimyo, notable figures, and a short historical summary
+- Uses a split `HTML + CSS + JavaScript` frontend structure for easier maintenance
 
 ## Live Access
 
 - GitHub Pages:
   `https://sakagami-yoshitoshi.github.io/sengoku-codex/`
 
-如果页面还没刷新出来，通常是因为 GitHub Pages 工作流还在部署中，几分钟后再访问即可。
+If the page has not refreshed yet, GitHub Pages is usually still deploying. Please check again in a few minutes.
 
 ## Repository Layout
 
 - `src/`
-  - 项目源码目录
-  - `index.html` 为主页面源码
-  - `assets/app.css` 为共享样式
-  - `assets/app.js` 为共享交互逻辑
-  - `japan-prefectures.svg` 为矢量底图源码
+  - Main source directory
+  - `index.html` is the primary authoring entrypoint
+  - `assets/app.css` contains shared styling
+  - `assets/app.js` contains shared interaction logic
+  - `japan-prefectures.svg` is the vector base map source
 - `docs/`
-  - GitHub Pages 发布目录
-  - `assets/preview.png` 为仓库首页预览图
+  - GitHub Pages publishing directory
+  - `assets/preview.png` is the repository preview image
 - `outputs/`
-  - 当前导出的交付版本备份
+  - Standalone exported delivery snapshot
 - `.github/workflows/`
-  - GitHub Pages 自动部署工作流
+  - GitHub Pages deployment workflow
 
 ## Local Use
 
-直接在浏览器打开以下任一文件即可：
+Open either of the following files in a browser:
 
 - `src/index.html`
 - `outputs/japan-sengoku-map.html`
 
 ## Current Release
 
-当前首个公开整理版本：
+Current public release:
 
 - `v0.1.0`
 
-发布内容见：
+Release details:
 
 - [CHANGELOG.md](./CHANGELOG.md)
 - [GitHub Release v0.1.0](https://github.com/sakagami-yoshitoshi/sengoku-codex/releases/tag/v0.1.0)
+
+## Documentation Policy
+
+- Repository documentation is maintained in English.
+- The application interface itself remains in Japanese, with bilingual historical and modern place-name labels where implemented.
 
 ## License
 

@@ -2,10 +2,10 @@
 
 ## v0.1.0
 
-- 发布日本战国地名与现代行政区划对照地图首个版本
-- 完成 47 都道府县交互浏览
-- 完成现代地名 / 战国地名日英双语显示
-- 完成都道府县点击放大与主要城市标注
-- 完成大名、武将与战国概要信息面板
-- 整理 `src/`、`docs/`、`outputs/` 三层目录结构
-- 增加 GitHub Pages 自动部署工作流
+- First public release of the Sengoku-to-modern Japan reference map
+- Added interactive exploration for all 47 prefectures
+- Added bilingual modern and Sengoku-era place-name labels
+- Added prefecture zoom interactions and major city labels
+- Added information panels for daimyo, notable figures, and historical summaries
+- Organized the project into `src/`, `docs/`, and `outputs/`
+- Added an automated GitHub Pages deployment workflow
