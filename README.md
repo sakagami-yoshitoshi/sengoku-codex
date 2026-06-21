@@ -20,6 +20,7 @@ Sengoku Codex 是一个面向桌面端浏览的静态网页地图项目，用来
 - 点击都道府县后自动切换到局部放大视图
 - 局部视图显示主要城市位置
 - 右侧信息面板显示旧国名、区域、代表大名、代表武将与战国概要
+- 前端已拆分为 `HTML + CSS + JavaScript` 多文件结构，便于后续维护
 
 ## Live Access
 
@@ -33,6 +34,8 @@ Sengoku Codex 是一个面向桌面端浏览的静态网页地图项目，用来
 - `src/`
   - 项目源码目录
   - `index.html` 为主页面源码
+  - `assets/app.css` 为共享样式
+  - `assets/app.js` 为共享交互逻辑
   - `japan-prefectures.svg` 为矢量底图源码
 - `docs/`
   - GitHub Pages 发布目录
@@ -60,11 +63,6 @@ Sengoku Codex 是一个面向桌面端浏览的静态网页地图项目，用来
 - [CHANGELOG.md](./CHANGELOG.md)
 - [GitHub Release v0.1.0](https://github.com/sakagami-yoshitoshi/sengoku-codex/releases/tag/v0.1.0)
 
-## Project Direction
+## License
 
-后续可以继续扩展的方向包括：
-
-- 补充更细的历史图层切换
-- 增加战役专题或家纹专题模式
-- 拆分为更易维护的多文件前端结构
-- 增加更正式的数据源说明与学术参考
+- [MIT](./LICENSE)
